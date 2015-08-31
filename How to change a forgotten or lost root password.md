@@ -7,6 +7,7 @@
 
 #Environment
 -  Red Hat Enterprise Linux (All version)
+
 ###,Resolution
 
 #Red Hat Enterprise Linux 4, 5, 6
@@ -45,6 +46,7 @@ Follow the instructions given by the rescue disk boot process:
 - Run the command "chroot /mnt/sysimage" to change root to your system image.
 - Use the command "passwd" to change the root password of the system.
 - *If the command "passwd" is not found, you will need to mount /usr in order to access usr/bin/passwd*
+
 ###LILO
 When the system comes to the LILO prompt, type "linux single". When the "#" prompt appears you will need to type "passwd root". This will update the password to a newer one. At this point you can type "exit" and your system should return to the boot sequence. Alternatively, you can reboot your system with the "shutdown -r now" or "reboot" commands. The system should boot up normally. You can now use your new root password to gain root access.
 
@@ -122,6 +124,7 @@ Red Hat Enterprise Linux 7 Installation Guide- Basic System Recovery
 To reset the root password of your server, you will need to boot into single user mode.
 
 Access the Manage section of your server in the customer portal and follow these steps. The option depends on the bootloader version on the machine:
+
 #CentOS 6
 1. Click [View Console] to access the console and click the send CTRL+ALT+DEL button on the top right. Alternatively, you can also click [RESTART] to restart the server. 
 2. You will see a GRUB boot prompt telling you to press any key - you have only a few seconds to press a key to stop the automated booting process. (If you miss this prompt you will need to restart the VM again) 
@@ -139,6 +142,7 @@ Access the Manage section of your server in the customer portal and follow these
 
 #FreeBSD
 The boot menu has an option to boot into single-user mode. Press the key for single user mode (2). At the root prompt, type "passwd" to change the root password and then reboot again.
+
 #CoreOS
 CoreOS by default uses SSH key authentication. On Vultr, a root user and password are created. If an SSH key is selected when creating the VPS, this SSH key can be used to login as user "core".
 
