@@ -114,11 +114,12 @@ Note that this may take some time during the next boot.
 
 The system will reboot, re-apply all SELinux labels, and present you with a regular login prompt.
 
-**Note:** If the system is encrypted, the above method will not work. Please refer to the following article: Resetting the Root Password of RHEL-7 for encrypted devices
+**Note:** If the system is encrypted, the above method will not work. Please refer to the following article: [Resetting the Root Password of RHEL-7 for encrypted devices](https://access.redhat.com/solutions/1192343)
 
 ###References:
 
-Red Hat Enterprise Linux 7 Installation Guide- Basic System Recovery
+[Red Hat Enterprise Linux 7 Installation Guide- Basic System Recovery](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/Installation_Guide/chap-basic-system-recovery.html#sect-rescue-mode-reset-root-password)
+
 
 #Access Single User Mode (Reset Root Password)
 To reset the root password of your server, you will need to boot into single user mode.
